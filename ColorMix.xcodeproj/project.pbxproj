@@ -9,21 +9,32 @@
 /* Begin PBXBuildFile section */
 		3C0F32552AF520A900CB835F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32542AF520A900CB835F /* AppDelegate.swift */; };
 		3C0F32572AF520A900CB835F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32562AF520A900CB835F /* SceneDelegate.swift */; };
-		3C0F32592AF520A900CB835F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32582AF520A900CB835F /* ViewController.swift */; };
-		3C0F325C2AF520A900CB835F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F325A2AF520A900CB835F /* Main.storyboard */; };
+		3C0F32592AF520A900CB835F /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32582AF520A900CB835F /* ColorViewController.swift */; };
 		3C0F325E2AF520AA00CB835F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F325D2AF520AA00CB835F /* Assets.xcassets */; };
 		3C0F32612AF520AA00CB835F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F325F2AF520AA00CB835F /* LaunchScreen.storyboard */; };
+		3C0F326D2AF5234600CB835F /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F326C2AF5234600CB835F /* ColorView.swift */; };
+		3C0F32702AF523C700CB835F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3C0F326F2AF523C700CB835F /* SnapKit */; };
+		3C0F32722AF5335900CB835F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32712AF5335900CB835F /* MainViewController.swift */; };
+		3C0F32752AF5356100CB835F /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F32742AF5356100CB835F /* Satisfy-Regular.ttf */; };
+		3C0F32772AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F32762AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf */; };
+		3C0F327A2AF535E200CB835F /* Extension + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32792AF535E200CB835F /* Extension + UIFont.swift */; };
+		3C0F327D2AF53F2B00CB835F /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F327C2AF53F2B00CB835F /* ColorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C0F32512AF520A900CB835F /* ColorMix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorMix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0F32542AF520A900CB835F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C0F32562AF520A900CB835F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C0F32582AF520A900CB835F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3C0F325B2AF520A900CB835F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C0F32582AF520A900CB835F /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		3C0F325D2AF520AA00CB835F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C0F32602AF520AA00CB835F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C0F32622AF520AA00CB835F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C0F326C2AF5234600CB835F /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		3C0F32712AF5335900CB835F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3C0F32742AF5356100CB835F /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satisfy-Regular.ttf"; sourceTree = "<group>"; };
+		3C0F32762AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		3C0F32792AF535E200CB835F /* Extension + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIFont.swift"; sourceTree = "<group>"; };
+		3C0F327C2AF53F2B00CB835F /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C0F32702AF523C700CB835F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,76 @@
 		3C0F32532AF520A900CB835F /* ColorMix */ = {
 			isa = PBXGroup;
 			children = (
-				3C0F32542AF520A900CB835F /* AppDelegate.swift */,
-				3C0F32562AF520A900CB835F /* SceneDelegate.swift */,
-				3C0F32582AF520A900CB835F /* ViewController.swift */,
-				3C0F325A2AF520A900CB835F /* Main.storyboard */,
-				3C0F325D2AF520AA00CB835F /* Assets.xcassets */,
-				3C0F325F2AF520AA00CB835F /* LaunchScreen.storyboard */,
+				3C0F327B2AF53F1400CB835F /* Services */,
+				3C0F32782AF535D200CB835F /* Extension */,
+				3C0F32682AF5227200CB835F /* SupportingFiles */,
+				3C0F326B2AF5232F00CB835F /* Views */,
+				3C0F32692AF5227A00CB835F /* Controllers */,
+				3C0F326A2AF5228100CB835F /* Resources */,
 				3C0F32622AF520AA00CB835F /* Info.plist */,
 			);
 			path = ColorMix;
+			sourceTree = "<group>";
+		};
+		3C0F32682AF5227200CB835F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F32542AF520A900CB835F /* AppDelegate.swift */,
+				3C0F32562AF520A900CB835F /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3C0F32692AF5227A00CB835F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F32582AF520A900CB835F /* ColorViewController.swift */,
+				3C0F32712AF5335900CB835F /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3C0F326A2AF5228100CB835F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F32732AF5355800CB835F /* Fonts */,
+				3C0F325D2AF520AA00CB835F /* Assets.xcassets */,
+				3C0F325F2AF520AA00CB835F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C0F326B2AF5232F00CB835F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F326C2AF5234600CB835F /* ColorView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3C0F32732AF5355800CB835F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F32742AF5356100CB835F /* Satisfy-Regular.ttf */,
+				3C0F32762AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3C0F32782AF535D200CB835F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F32792AF535E200CB835F /* Extension + UIFont.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3C0F327B2AF53F1400CB835F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F327C2AF53F2B00CB835F /* ColorManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +156,9 @@
 			dependencies = (
 			);
 			name = ColorMix;
+			packageProductDependencies = (
+				3C0F326F2AF523C700CB835F /* SnapKit */,
+			);
 			productName = ColorMix;
 			productReference = 3C0F32512AF520A900CB835F /* ColorMix.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 3C0F32482AF520A900CB835F;
+			packageReferences = (
+				3C0F326E2AF523C700CB835F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3C0F32522AF520A900CB835F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C0F32752AF5356100CB835F /* Satisfy-Regular.ttf in Resources */,
 				3C0F32612AF520AA00CB835F /* LaunchScreen.storyboard in Resources */,
 				3C0F325E2AF520AA00CB835F /* Assets.xcassets in Resources */,
-				3C0F325C2AF520A900CB835F /* Main.storyboard in Resources */,
+				3C0F32772AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +218,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C0F32592AF520A900CB835F /* ViewController.swift in Sources */,
+				3C0F327D2AF53F2B00CB835F /* ColorManager.swift in Sources */,
+				3C0F327A2AF535E200CB835F /* Extension + UIFont.swift in Sources */,
+				3C0F326D2AF5234600CB835F /* ColorView.swift in Sources */,
+				3C0F32592AF520A900CB835F /* ColorViewController.swift in Sources */,
 				3C0F32552AF520A900CB835F /* AppDelegate.swift in Sources */,
 				3C0F32572AF520A900CB835F /* SceneDelegate.swift in Sources */,
+				3C0F32722AF5335900CB835F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3C0F325A2AF520A900CB835F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C0F325B2AF520A900CB835F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3C0F325F2AF520AA00CB835F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +368,6 @@
 				INFOPLIST_FILE = ColorMix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +395,6 @@
 				INFOPLIST_FILE = ColorMix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C0F326E2AF523C700CB835F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C0F326F2AF523C700CB835F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C0F326E2AF523C700CB835F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C0F32492AF520A900CB835F /* Project object */;
 }
