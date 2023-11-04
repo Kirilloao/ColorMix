@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ColorManager {
+final class ColorManager {
     static let shared = ColorManager()
     
     private init() {}

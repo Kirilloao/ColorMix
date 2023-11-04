@@ -12,13 +12,14 @@
 		3C0F32592AF520A900CB835F /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32582AF520A900CB835F /* ColorViewController.swift */; };
 		3C0F325E2AF520AA00CB835F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F325D2AF520AA00CB835F /* Assets.xcassets */; };
 		3C0F32612AF520AA00CB835F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F325F2AF520AA00CB835F /* LaunchScreen.storyboard */; };
-		3C0F326D2AF5234600CB835F /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F326C2AF5234600CB835F /* ColorView.swift */; };
 		3C0F32702AF523C700CB835F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3C0F326F2AF523C700CB835F /* SnapKit */; };
 		3C0F32722AF5335900CB835F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32712AF5335900CB835F /* MainViewController.swift */; };
 		3C0F32752AF5356100CB835F /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F32742AF5356100CB835F /* Satisfy-Regular.ttf */; };
 		3C0F32772AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F32762AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf */; };
 		3C0F327A2AF535E200CB835F /* Extension + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32792AF535E200CB835F /* Extension + UIFont.swift */; };
 		3C0F327D2AF53F2B00CB835F /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F327C2AF53F2B00CB835F /* ColorManager.swift */; };
+		3C0F32802AF6576500CB835F /* MainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F327F2AF6576500CB835F /* MainViewBuilder.swift */; };
+		3C0F32822AF65A6E00CB835F /* ColorViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32812AF65A6E00CB835F /* ColorViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +30,13 @@
 		3C0F325D2AF520AA00CB835F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C0F32602AF520AA00CB835F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C0F32622AF520AA00CB835F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C0F326C2AF5234600CB835F /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		3C0F32712AF5335900CB835F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3C0F32742AF5356100CB835F /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satisfy-Regular.ttf"; sourceTree = "<group>"; };
 		3C0F32762AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		3C0F32792AF535E200CB835F /* Extension + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIFont.swift"; sourceTree = "<group>"; };
 		3C0F327C2AF53F2B00CB835F /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		3C0F327F2AF6576500CB835F /* MainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewBuilder.swift; sourceTree = "<group>"; };
+		3C0F32812AF65A6E00CB835F /* ColorViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +70,10 @@
 		3C0F32532AF520A900CB835F /* ColorMix */ = {
 			isa = PBXGroup;
 			children = (
+				3C0F327E2AF6575A00CB835F /* Builder */,
 				3C0F327B2AF53F1400CB835F /* Services */,
 				3C0F32782AF535D200CB835F /* Extension */,
 				3C0F32682AF5227200CB835F /* SupportingFiles */,
-				3C0F326B2AF5232F00CB835F /* Views */,
 				3C0F32692AF5227A00CB835F /* Controllers */,
 				3C0F326A2AF5228100CB835F /* Resources */,
 				3C0F32622AF520AA00CB835F /* Info.plist */,
@@ -91,8 +93,8 @@
 		3C0F32692AF5227A00CB835F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3C0F32582AF520A900CB835F /* ColorViewController.swift */,
 				3C0F32712AF5335900CB835F /* MainViewController.swift */,
+				3C0F32582AF520A900CB835F /* ColorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -105,14 +107,6 @@
 				3C0F325F2AF520AA00CB835F /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		3C0F326B2AF5232F00CB835F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3C0F326C2AF5234600CB835F /* ColorView.swift */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		3C0F32732AF5355800CB835F /* Fonts */ = {
@@ -138,6 +132,15 @@
 				3C0F327C2AF53F2B00CB835F /* ColorManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3C0F327E2AF6575A00CB835F /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F327F2AF6576500CB835F /* MainViewBuilder.swift */,
+				3C0F32812AF65A6E00CB835F /* ColorViewBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,10 +223,11 @@
 			files = (
 				3C0F327D2AF53F2B00CB835F /* ColorManager.swift in Sources */,
 				3C0F327A2AF535E200CB835F /* Extension + UIFont.swift in Sources */,
-				3C0F326D2AF5234600CB835F /* ColorView.swift in Sources */,
 				3C0F32592AF520A900CB835F /* ColorViewController.swift in Sources */,
+				3C0F32822AF65A6E00CB835F /* ColorViewBuilder.swift in Sources */,
 				3C0F32552AF520A900CB835F /* AppDelegate.swift in Sources */,
 				3C0F32572AF520A900CB835F /* SceneDelegate.swift in Sources */,
+				3C0F32802AF6576500CB835F /* MainViewBuilder.swift in Sources */,
 				3C0F32722AF5335900CB835F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
