@@ -11,10 +11,5 @@ extension UIFont {
     static func satisfy(size: CGFloat) -> UIFont {
         UIFont(name: "Satisfy-Regular", size: size) ?? UIFont.systemFont(ofSize: size)
     }
-    
-    static func dancing(size: CGFloat) -> UIFont {
-        UIFont(name: "DancingScript-VariableFont_wght", size: size) ?? UIFont.systemFont(ofSize: size)
-    }
-    
 }
 

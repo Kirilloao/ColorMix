@@ -17,6 +17,8 @@ final class ColorViewBuilder {
         var main = UIView()
         main.backgroundColor = .systemGray4
         main.layer.cornerRadius = 15
+        main.layer.borderColor = UIColor.systemGray3.cgColor
+        main.layer.borderWidth = 1
         return main
     }()
     
@@ -36,7 +38,8 @@ final class ColorViewBuilder {
     
     func getSlider(with color: UIColor) -> UISlider {
         let customSlider = UISlider()
-        customSlider.thumbTintColor = color
+        customSlider.thumbTintColor = .systemGray3
+        customSlider.minimumTrackTintColor = color
         return customSlider
     }
     
@@ -44,6 +47,7 @@ final class ColorViewBuilder {
         let customTF = UITextField()
         customTF.placeholder = "1.00"
         customTF.borderStyle = .roundedRect
+        customTF.keyboardType = .decimalPad
         return customTF
     }
     

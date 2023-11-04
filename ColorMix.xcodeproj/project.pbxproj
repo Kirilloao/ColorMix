@@ -15,7 +15,6 @@
 		3C0F32702AF523C700CB835F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3C0F326F2AF523C700CB835F /* SnapKit */; };
 		3C0F32722AF5335900CB835F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32712AF5335900CB835F /* MainViewController.swift */; };
 		3C0F32752AF5356100CB835F /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F32742AF5356100CB835F /* Satisfy-Regular.ttf */; };
-		3C0F32772AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F32762AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf */; };
 		3C0F327A2AF535E200CB835F /* Extension + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32792AF535E200CB835F /* Extension + UIFont.swift */; };
 		3C0F327D2AF53F2B00CB835F /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F327C2AF53F2B00CB835F /* ColorManager.swift */; };
 		3C0F32802AF6576500CB835F /* MainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F327F2AF6576500CB835F /* MainViewBuilder.swift */; };
@@ -32,7 +31,6 @@
 		3C0F32622AF520AA00CB835F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C0F32712AF5335900CB835F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3C0F32742AF5356100CB835F /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satisfy-Regular.ttf"; sourceTree = "<group>"; };
-		3C0F32762AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		3C0F32792AF535E200CB835F /* Extension + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIFont.swift"; sourceTree = "<group>"; };
 		3C0F327C2AF53F2B00CB835F /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		3C0F327F2AF6576500CB835F /* MainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewBuilder.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				3C0F32742AF5356100CB835F /* Satisfy-Regular.ttf */,
-				3C0F32762AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -210,7 +207,6 @@
 				3C0F32752AF5356100CB835F /* Satisfy-Regular.ttf in Resources */,
 				3C0F32612AF520AA00CB835F /* LaunchScreen.storyboard in Resources */,
 				3C0F325E2AF520AA00CB835F /* Assets.xcassets in Resources */,
-				3C0F32772AF5356B00CB835F /* DancingScript-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

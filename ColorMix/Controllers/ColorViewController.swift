@@ -242,6 +242,10 @@ extension ColorViewController {
         greenTextField = build.getTextField()
         blueTextField = build.getTextField()
         
+        redTextField.delegate = self
+        greenTextField.delegate = self
+        blueTextField.delegate = self
+        
         // setup stackView
         textFieldsStackView = build.getStackView(
             redTextField, greenTextField, blueTextField,
@@ -282,8 +286,57 @@ extension ColorViewController {
     }
 }
 
-// MARK: - 
+// MARK: - UITextFieldDelegate
 extension ColorViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let text = textField.text else {
+            showAlert(title: "Wrong format!", message: "Please ender correct value")
+            return
+        }
+        guard let currentValue = Float(text), (0...1).contains(currentValue) else {
+            showAlert(title: "Wrong format!",
+                      message: "Please enter correct value",
+                      textField: textField
+            )
+            return
+        }
+        
+        switch textField {
+        case redTextField:
+            redSlider.setValue(currentValue, animated: true)
+            setValue(for: redValueLabel)
+        case greenTextField:
+            greenSlider.setValue(currentValue, animated: true)
+            setValue(for: greenValueLabel)
+        default:
+            blueSlider.setValue(currentValue, animated: true)
+            setValue(for: blueValueLabel)
+        }
+        
+        setColor()
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.sizeToFit()
+        textField.inputAccessoryView = keyboardToolbar
+        
+        let doneButton = UIBarButtonItem(
+            barButtonSystemItem: .done,
+            target: textField,
+            action: #selector(resignFirstResponder))
+        
+        let flexBarButton = UIBarButtonItem(
+            barButtonSystemItem: .flexibleSpace,
+            target: nil,
+            action: nil
+        )
+        
+        keyboardToolbar.items = [flexBarButton, doneButton]
+    }
 }
 
