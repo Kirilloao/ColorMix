@@ -15,9 +15,9 @@ https://swiftmarathon.devrush.ru
 
 ## Screenshots:
 <p align="center">
-  <img src="https://github.com/Kirilloao/ColorMix/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20-%202023-11-04%20at%2017-portrait.png" width="300" />
-  <img src="https://github.com/Kirilloao/ColorMix/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20-%202023-11-04%20at%2017-portrait%20copy.png" width="300" />
-  <img src="https://github.com/Kirilloao/ColorMix/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20-%202023-11-04%20at%2017-portrait%20copy%202.png" width="300" />
+  <img src="https://github.com/Kirilloao/ColorMix/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20-%202023-11-04%20at%2017-portrait.png" width="250" height=500 />
+  <img src="https://github.com/Kirilloao/ColorMix/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20-%202023-11-04%20at%2017-portrait%20copy.png" width="250" height=500 />
+  <img src="https://github.com/Kirilloao/ColorMix/blob/main/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20-%202023-11-04%20at%2017-portrait%20copy%202.png" width="250" height=500 />
 </p>
 
 
