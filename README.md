@@ -4,7 +4,7 @@
 
 IndividualСhallenge 1
 
-https://swiftmarathon.devrush.ru
+[https://swiftmarathon.devrush.ru](https://devrush.online)
 
 ## Tecnical Stack:
 * UIKit
